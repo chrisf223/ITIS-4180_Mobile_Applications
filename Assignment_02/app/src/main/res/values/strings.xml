@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Color Selection App</string>
+    <string name="reset_button">Reset</string>
+    <string name="blue_button">Blue</string>
+    <string name="black_button">Black</string>
+    <string name="white_button">White</string>
+    <string name="red_text">Red:</string>
+    <string name="green_text">Green:</string>
+    <string name="blue_text">Blue:</string>
+    <string name="hex_text">Color HEX:</string>
+    <string name="rgb_text">Color RGB:</string>
+    <string name="blue_value">0</string>
+    <string name="green_value">128</string>
+    <string name="red_value">64</string>
+    <string name="hex_value">#408000</string>
+    <string name="rgb_value">(64, 128, 0)</string>
+    <string name="title_text">Color Selection</string>
+</resources>
