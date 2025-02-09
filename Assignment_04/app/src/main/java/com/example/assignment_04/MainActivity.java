@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+//Assignment 4
+// Assignment_04
+// DeCristo Franceschini
 public class MainActivity extends AppCompatActivity {
 
     @Override
