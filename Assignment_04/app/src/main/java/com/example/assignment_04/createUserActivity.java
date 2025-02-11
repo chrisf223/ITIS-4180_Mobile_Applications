@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.regex.Pattern;
+
 public class createUserActivity extends AppCompatActivity {
 
     TextView name;
@@ -36,6 +38,9 @@ public class createUserActivity extends AppCompatActivity {
                 else if (email.getText().toString().isEmpty()) {
                     Toast.makeText(createUserActivity.this, "Please enter your email", Toast.LENGTH_SHORT).show();
                 }
+                else if (!isValidEmail(email.getText().toString())) {
+                    Toast.makeText(createUserActivity.this, "Please enter a valid email", Toast.LENGTH_SHORT).show();
+                }
                 else {
                     String userName = name.getText().toString();
                     String userEmail = email.getText().toString();
@@ -55,5 +60,17 @@ public class createUserActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public static boolean isValidEmail(String email) {
+
+        // Regular expression to match valid email formats
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@" +
+                "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+
+        // Compile the regex
+        Pattern p = Pattern.compile(emailRegex);
+
+        // Check if email matches the pattern
+        return email != null && p.matcher(email).matches();
     }
 }
