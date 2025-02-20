@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".TasksFragment" >
+
+    <TextView
+        android:id="@+id/textViewTasksCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="You have 0 tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTasksCount">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTaskName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDelete"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewDelete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDelete" />
+
+            <TextView
+                android:id="@+id/textViewTaskDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/textViewTaskName"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDelete" />
+
+            <TextView
+                android:id="@+id/textViewTaskPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDelete"
+                app:layout_constraintTop_toTopOf="@+id/textViewTaskDate" />
+
+            <ImageView
+                android:id="@+id/imageViewPrevious"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_left_arrow"
+                app:layout_constraintStart_toStartOf="@+id/textViewTaskDate"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTaskDate" />
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_right_arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPrevious" />
+
+            <TextView
+                android:id="@+id/textViewTaskOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task 1 of 1"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewPrevious"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewNext"
+                app:layout_constraintStart_toEndOf="@+id/imageViewPrevious"
+                app:layout_constraintTop_toTopOf="@+id/imageViewPrevious" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonCreateTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create Task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
