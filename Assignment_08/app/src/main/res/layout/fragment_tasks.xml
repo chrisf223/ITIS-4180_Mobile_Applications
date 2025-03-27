@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".TasksFragment" >
+
+    <TextView
+        android:id="@+id/textViewTasksCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="You have 0 tasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSort" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTasksCount" />
+
+    <Button
+        android:id="@+id/buttonSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNew"
+        app:layout_constraintStart_toEndOf="@+id/buttonClear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSort" />
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSort" />
+
+    <TextView
+        android:id="@+id/textViewTasksSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date (ASC)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTasksCount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SortFragment" >
+
+    <ImageView
+        android:id="@+id/imageViewDateDESC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_desc_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNameDESC" />
+
+    <ImageView
+        android:id="@+id/imageViewPriorityDESC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_desc_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDateDESC" />
+
+    <ImageView
+        android:id="@+id/imageViewPriorityASC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_asc_sort"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDateASC"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPriorityDESC" />
+
+    <ImageView
+        android:id="@+id/imageViewNameASC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_asc_sort"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNameDESC"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNameDESC" />
+
+    <ImageView
+        android:id="@+id/imageViewDateASC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_asc_sort"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewNameASC"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDateDESC" />
+
+    <ImageView
+        android:id="@+id/imageViewNameDESC"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_desc_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNameASC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNameASC" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDateASC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDateASC" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPriorityASC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPriorityASC" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
