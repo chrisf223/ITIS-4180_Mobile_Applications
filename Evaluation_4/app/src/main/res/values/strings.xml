@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Assessment03</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="name_label">Name:</string>
+    <string name="age_label">Age:</string>
+    <string name="credit_score_label">Credit Score:</string>
+    <string name="state_label">State:</string>
+    <string name="na_label">N/A</string>
+    <string name="select_label">Select</string>
+    <string name="submit_label">Submit</string>
+    <string name="sort_by_na">Sorted By: N/A</string>
+    <string name="filter_by_by_na">Filtered By: N/A</string>
+    <string name="sort_by_name_ascending">Sort by name ascending</string>
+    <string name="sort_by_credit_descending">Sort by credit descending</string>
+    <string name="sort_by_credit_ascending">Sort by credit ascending</string>
+    <string name="sort_by_name_descending">Sort by name descending</string>
+    <string name="select_criteria">Select the credit score filtering criteria (Greater than or equal to the selected category)</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="filter_by_selection">Filter By Selection</string>
+    <string name="add_label">Add</string>
+    <string name="filter_desc_label">Select the credit score filtering criteria (Greater than or equal to the selected category)</string>
+    <string name="no_filter_label">No Filter</string>
+    <string name="logout_label">Logout</string>
+</resources>
