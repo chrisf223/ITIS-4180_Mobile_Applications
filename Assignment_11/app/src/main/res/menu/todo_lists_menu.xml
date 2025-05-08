@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_new_todo_list_action"
+        android:title="@string/add_label"
+        app:showAsAction="always"
+        android:orderInCategory="101"
+        android:icon="@drawable/add_ic"/>
+
+    <item android:id="@+id/logout_action"
+        android:title="@string/logout_label"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@drawable/logout_ic"/>
+</menu>

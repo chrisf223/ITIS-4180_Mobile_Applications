@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652729891642",
+    "project_id": "assessment-5-7f8b5",
+    "storage_bucket": "assessment-5-7f8b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652729891642:android:bd03034c61370d66eaee03",
+        "android_client_info": {
+          "package_name": "edu.uncc.assessment05"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAELkZO35f9T9SjhqyFQ8dRnpCvJzHDBVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
